@@ -1,0 +1,143 @@
+
+/****** PRESENTATION ***********/
+
+.presentation-section img {
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+    margin-bottom: -20px;  /*modif*/
+}
+
+
+/****** MENU ***********/
+
+.menu-section {
+    position: relative;
+    background-color: $background-color;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+
+    &__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    @media (min-width: 768px) { 
+        display: flex;
+        justify-content: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    h1 {
+        font-family: Shrikhand;
+        font-size: 28px;
+        font-weight: 400;
+        }
+    }
+
+    @media (min-width: 768px) {
+        max-width: 1025px;
+        margin: auto;
+    }  
+}
+
+.menu-section__title--hearts {
+    .fa-heart {
+        @media (min-width: 768px) {
+        padding-top: 5px;
+        position: relative;
+        }
+    }
+
+    .fa-heart--full {
+        @media (min-width: 768px) {
+        right: 64px;
+        }
+    }
+}
+
+/****** PLATS ***********/
+
+.courses__title {
+    padding: 5px 20px;
+    h2 {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &--line {
+        width: 40px;
+        height: 3px;
+        background: #99E2D0;
+        margin-top: 5px;
+    }
+}
+
+.courses__container {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course__details {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px 20px;
+    border-radius : 15px;
+    background-color: $background-color;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    width: calc(90%);
+    animation : fadein 2s;
+    &:hover  .course__details--check {
+        margin-right: -20px;
+    }
+    &--txt {
+        padding: 5px 0 5px 10px;
+        min-width: 0;
+        p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &--title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    &--price {
+        padding: 27px 30px 0 10px;
+        font-weight: bold;
+        color: #353535;
+        margin-left: auto;
+    }
+    &--check {
+        background-color: #99E2D0;
+        width: 60px;
+        padding: 20px 20px 20px 5px ;
+        margin-right : -100px;
+        transition: 400ms ease-in-out;
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.fa-circle-check {
+    color: white;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,45 @@
+/****** HEADER INDEX ***********/
+
+.header-index {
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    img {
+    height: 36px;
+    width: 197x;
+    padding: 14px 89px;
+    }
+}
+
+.search-bar {
+    height: 50px;
+    gap: 17px;
+    background-color: #EAEAEA;
+    &__input {
+    color: #353535;
+    border-style: none;
+    font-size: 16px;
+    background-color: #EAEAEA;
+    }
+}
+
+::placeholder {
+    color: #353535;
+    font-weight: 500;
+}
+
+/****** HEADER RESTAURANTS ***********/
+
+.fa-arrow-left {
+    color: black;
+}
+
+.arrow-icon {
+    position: absolute;
+    left : 20px;
+    font-size: 20px;
+}
+
