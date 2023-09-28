@@ -193,6 +193,10 @@ footer {
   font-weight: 500;
 }
 
+.footer-txt-thin {
+  font-weight: 400;
+}
+
 /****** HEADER INDEX ***********/
 .header-index {
   width: 100%;
@@ -539,6 +543,9 @@ nav img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.course__details--subtitle {
+  font-weight: 300;
 }
 .course__details--title {
   font-size: 18px;

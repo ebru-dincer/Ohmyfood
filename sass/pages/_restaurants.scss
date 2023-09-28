@@ -105,6 +105,9 @@
             text-overflow: ellipsis;
         }
     }
+    &--subtitle {
+        font-weight: 300;
+    }
     &--title {
         font-size: 18px;
         font-weight: 500;
@@ -124,6 +127,7 @@
         transition: 400ms ease-in-out;
     }
 }
+
 
 
 @keyframes fadein {
